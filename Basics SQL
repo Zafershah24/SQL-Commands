@@ -31,3 +31,7 @@ UPDATE student
 SET major ='Mathematics'
 WHERE major = 'Maths' ;
 SET SQL_SAFE_UPDATES = 1;
+
+
+/* DROP A ROW IN A TABLE */
+DELETE FROM student WHERE student_id =2;
