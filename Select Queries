@@ -1,0 +1,7 @@
+/* SELECT PARTICULAR COLIMS FROM A TABLE*/
+SELECT student_id,major FROM student;
+SELECT name,major FROM student;
+
+
+/* SELECT ALL FROM A TABLE*/
+SELECT s* FROM student;
