@@ -4,4 +4,4 @@ SELECT name,major FROM student;
 
 
 /* SELECT ALL FROM A TABLE*/
-SELECT s* FROM student;
+SELECT * FROM student;
