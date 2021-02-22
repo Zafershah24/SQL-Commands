@@ -1,19 +1,33 @@
 create database giraffe;
 USE giraffe;
+
 CREATE TABLE student (student_id INT PRIMARY KEY , 
 name VARCHAR(30), 
 /* ENTRY DEFAULT VALUE BY GIVING A DEFAULT CONSTRAINT */
 major VARCHAR(30) DEFAULT 'Undecided');
 DESCRIBE student;
+
 /* DROP ENTIRE TABLE */
 DROP TABLE student;
+
 /* DROP A COLUMN IN A TABLE */
 ALTER TABLE student DROP COLUMN gpa;  
 ALTER TABLE student ADD gpa DECIMAL(3,2);
+
+
 /* INSERTING DATA IN A TABLE */
 INSERT INTO student VALUES(1,'Zafer','CSE',9.75);
 INSERT INTO student VALUES(2,'Katrina','CSE',9.85);
+
 /* SKIP A PARTICULAR COLUMN VALUE IN A TABLE */
 INSERT INTO student(student_id,name,gpa) VALUES(3,'Regina',9.85);
+
 /* LOOK EVERYTHING INSIDE THE TABLE */
 SELECT * FROM student;
+
+/* UPDATE VALUES IN A PARTICULAR ROW */
+SET SQL_SAFE_UPDATES = 0;
+UPDATE student  
+SET major ='Mathematics'
+WHERE major = 'Maths' ;
+SET SQL_SAFE_UPDATES = 1;
