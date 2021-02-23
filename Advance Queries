@@ -132,3 +132,9 @@ select * from employee WHERE SEX='M' AND SALARY =7800;
 
 /* RETURN DISTINCT VALUES FROM A PARTICULAR ATTRIBUTE*/
 select distinct client_name from client;
+
+/* RETURN avg SALARY FROM A PARTICULAR ROW(SEX='F')*/
+SELECT avg(salary) FROM employee WHERE sex='F';
+
+/* RETURN COUNT FROM A PARTICULAR COLUMN(by further GROUPING THEM)*/
+SELECT COUNT(sex),sex FROM employee GROUP BY sex;
