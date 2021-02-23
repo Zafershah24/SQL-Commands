@@ -120,3 +120,12 @@ INSERT INTO works_with VALUES(105, 404, 33000);
 INSERT INTO works_with VALUES(107, 405, 26000);
 INSERT INTO works_with VALUES(102, 406, 15000);
 INSERT INTO works_with VALUES(105, 406, 130000);
+
+
+
+
+/* Limits 5 QUERIES*/
+select * from employee LIMIT 5;
+
+/* CONDITIONAL QUERIES*/
+select * from employee WHERE SEX='M' AND SALARY =7800;
