@@ -129,3 +129,6 @@ select * from employee LIMIT 5;
 
 /* CONDITIONAL QUERIES*/
 select * from employee WHERE SEX='M' AND SALARY =7800;
+
+/* RETURN DISTINCT VALUES FROM A PARTICULAR ATTRIBUTE*/
+select distinct client_name from client;
