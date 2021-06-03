@@ -30,7 +30,7 @@ LIMIT:
 
 SELECT name,rankscore FROM movies LIMIT 20;
 
-
+#OFFSET :  Rows to ignore from the start (40 in this case)
 SELECT name,rankscore FROM movies LIMIT 20 OFFSET 40;
 
 
