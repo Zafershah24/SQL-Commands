@@ -28,10 +28,10 @@ SELECT rankscore,name FROM movies;
 LIMIT:
 
 
-SELECT name,rankscore FROM movies LIMIT 20;
+SELECT name,rankscore FROM movies LIMIT 20; //Limit- Shows First 20 rows
 
 #OFFSET :  Rows to ignore from the start (40 in this case)
-SELECT name,rankscore FROM movies LIMIT 20 OFFSET 40;
+SELECT name,rankscore FROM movies LIMIT 20 OFFSET 40;  //Offset - Ignore 40 rows
 
 
 ****************************************************************************************************
@@ -43,7 +43,7 @@ ORDER BY:
 
 
 # list recent movies first
-
+#(default Ascending; Sorting takes place)
 
 SELECT name,rankscore,year FROM movies ORDER BY year DESC LIMIT 10;
 
@@ -64,7 +64,7 @@ SELECT name,rankscore,year FROM movies ORDER BY year LIMIT 10;
 
 DISTINCT:
 
-
+#Filtering (Size=M tshirt)
 # list all genres of 
 SELECT DISTINCT genre FROM movies_genres;
 
@@ -92,7 +92,7 @@ SELECT name,year,rankscore FROM movies WHERE rankscore>9 ORDER BY rankscore DESC
 
 # Condition's outputs: TRUE, FALSE, NULL
 
-
+###IMPORTANT
 # Comparison Operators: = , <> or != , < , <= , >, >= 
 SELECT * FROM movies_genres WHERE genre = 'Comedy';
 
